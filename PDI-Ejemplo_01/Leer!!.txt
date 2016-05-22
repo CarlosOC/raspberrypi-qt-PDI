@@ -1,15 +1,7 @@
-<<<<<<< HEAD
 Project created by QtCreator 2016-05-20T15:40:03
 En este proyecto se lee una imagen, y se cambia el color de los pixeles
 Muestra la imagen sin modificar y modificada.
 Se puede comparar como se cambian los colores de los pixeles que no son negros.
 Hay que tener en cuenta la linea de codigo 21, del archivo widget.cpp porque tiene la direccion de la imagen que se va a modificar.
 
-=======
-Project created by QtCreator 2016-05-20T15:40:03
-En este proyecto se lee una imagen, y se cambia el color de los pixeles
-Muestra la imagen sin modificar y modificada.
-Se puede comparar como se cambian los colores de los pixeles que no son negros.
-Hay que tener en cuenta la linea de codigo 21, del archivo widget.cpp porque tiene la direccion de la imagen que se va a modificar.
 
->>>>>>> origin/master
