@@ -7,5 +7,5 @@ necesarios para compilar en RaspberyPI
 Este ejemplo es una aplicacion de Terminal Serviria para 
 medir el tiempo de ejecucion del algoritmo Se requiere un 
 osciloscopio y medir el PIN 11 del Raspberry deberia ser 
-mucho menos que la mitad de 50ms                    
+mucho menos que la mitad de 50ms.                    
 
