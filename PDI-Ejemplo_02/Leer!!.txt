@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 Project created by QtCreator 2016-05-20T17:03:18
 En este proyecto se lee una imagen, y se cambia el color de los pixeles,pero ademas se pone en "H" y en "L" el PIN 11 del RaspberryPI para medir el tiempo que se tarda el algoritmo.
 Tambien se implementa un Timmer
 Sacar los comentarios necesarios para compilar en RaspberyPI
-=======
-Project created by QtCreator 2016-05-20T17:03:18
-En este proyecto se lee una imagen, y se cambia el color de los pixeles,pero ademas se pone en "H" y en "L" el PIN 11 del RaspberryPI para medir el tiempo que se tarda el algoritmo.
-Tambien se implementa un Timmer
-Sacar los comentarios necesarios para compilar en RaspberyPI
->>>>>>> origin/master
