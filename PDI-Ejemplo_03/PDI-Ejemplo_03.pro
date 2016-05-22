@@ -1,5 +1,4 @@
 #-----------------------------------------------------------    #
-#                                                               #
 # Project created by QtCreator 2016-05-21T11:34:35              #
 # En este proyecto se lee una imagen, y se cambia               #
 # el color de los pixeles,pero ademas se pone en "H"            #
