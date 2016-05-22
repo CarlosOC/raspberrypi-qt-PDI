@@ -16,9 +16,13 @@ public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
 
+private slots:
+    void update ();
+
 
 private:
     Ui::Widget *ui;
+
 };
 
 #endif // WIDGET_H

@@ -2,10 +2,6 @@
 #include "QDebug"
 #include "QTimer"
 #include "Ejemplo3.h"
-
-
-
-
 void update()
 {
 

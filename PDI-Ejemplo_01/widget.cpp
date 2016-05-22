@@ -39,7 +39,7 @@ Widget::Widget(QWidget *parent) :
             {
                area++;
              int px2=imagen_Original.pixelIndex(x,y);
-             if (px2 == 0)
+             if (px2 > 0)
                     {
                     //px2 = color negro
                      px2=255;
