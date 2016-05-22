@@ -11,11 +11,7 @@
 # Deberia ser mucho menos a la mitad de 50ms                    #
 #-------------------------------------------------------------  #
 
-
-
-#QT       += core
 QT       += core gui
-#QT       -= gui
 
 TARGET = PDI-Ejemplo_03
 CONFIG   += console

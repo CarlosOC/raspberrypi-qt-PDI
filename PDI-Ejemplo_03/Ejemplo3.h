@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <QObject>
+// #include <wiringPi.h> // Solo para el RaspberryPi
 
 class Interrup : public QObject
 {

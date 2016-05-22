@@ -17,6 +17,6 @@ int main(int argc, char *argv[])
     Interrup interrup;
     QTimer *timer = new QTimer(NULL);
     QObject::connect(timer,SIGNAL(timeout()),&interrup,SLOT( Interrupcion() ));
-    timer->start(100);
+    timer->start(250);  //250ms
     return a.exec();
 }
