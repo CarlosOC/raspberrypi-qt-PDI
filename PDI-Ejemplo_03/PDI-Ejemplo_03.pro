@@ -23,8 +23,8 @@ TEMPLATE = app
 SOURCES += main.cpp \
     programa.cpp
 
-#LIBS += -L/usr/local/lib -lwiringPi    // Solo para el RaspberryPi
-#LIBS += -L/usr/local/lib -lpthread     // Solo para el RaspberryPi
-
 HEADERS += \
     Ejemplo3.h
+
+LIBS += -L/usr/local/lib -lwiringPi    # Solo para el RaspberryPi
+LIBS += -L/usr/local/lib -lpthread     # Solo para el RaspberryPi
