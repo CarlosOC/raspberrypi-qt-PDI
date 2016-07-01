@@ -12,23 +12,22 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    int sizeX = 320;
-    int sizeY = 240;
+
 
     //Saca una Foto con la Camara
-    //system("sudo raspistill -hf -vf -w 320 -h 240 -o test5.bmp -e bmp");
+    system("sudo raspistill -hf -vf -w 320 -h 240 -o test5.bmp -e bmp");
 
     //Leer un archivo Imagen
-    //QImage imagen = QImage("//home//pi//PruebaPDI-build-embedded-Qt_4_8_2_in_PATH__System__Release//test5","bmp");
-    QImage imagen_Original = QImage("C:\\Users\\Carlos OC\\Documents\\Investigacion Pedroni\\Horizonte01","bmp");
+    QImage imagen_Original = QImage("//home//pi//GitHub//raspberrypi-qt-PDI//PDI-Ejemplo_04-build-embedded-Qt_4_8_2_in_PATH__System__Release//test5","bmp");
+   // QImage imagen_Original = QImage("C:\\Users\\Carlos OC\\Documents\\Investigacion Pedroni\\Horizonte01","bmp");
     QImage imagen_Modificado = imagen_Original;
 
     //Mostrar Prop. de la imagen
-    qDebug()<<imagen_Original;
+    //qDebug()<<imagen_Original;
 
 
-    //Devuelve el color del Pix (x,y)formato index (8bits)
-    int px=imagen_Original.pixelIndex(1,1);
+    //Devuelve el color del Pix (x,y)
+    unsigned int px=imagen_Original.pixel(1,1);
 
     //Muestra el Valor del pixel (color)
     qDebug()<<px;
@@ -40,8 +39,8 @@ Widget::Widget(QWidget *parent) :
             for(int y=0;y<imagen_Original.height();y++)
             {
                area++;
-             int px2=imagen_Original.pixelIndex(x,y);
-             if (px2 > 0)
+             int px2=imagen_Original.pixel(x,y);
+             if (px2 >= px)
                     {
                     //px2 = color negro
                      px2=255;
@@ -65,12 +64,12 @@ Widget::Widget(QWidget *parent) :
 
     QGraphicsScene *graphic_Original = new QGraphicsScene (this);
     graphic_Original->addPixmap( QPixmap ::fromImage(imagen_Original));
-    QGraphicsScene *graphic_Modificado = new QGraphicsScene (this);
-    //graphic_Modificado->addPixmap( QPixmap ::fromImage(imagen_Modificado));
-    graphic_Modificado->addPixmap( QPixmap ::fromImage(imagen_Modificado));
-
     ui->graphics_Original->setScene(graphic_Original);
+
+    QGraphicsScene *graphic_Modificado = new QGraphicsScene (this);
+    graphic_Modificado->addPixmap( QPixmap ::fromImage(imagen_Modificado));
     ui->graphics_Modificado->setScene(graphic_Modificado);
+
 
 }
 
