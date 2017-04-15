@@ -21,10 +21,6 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    QTimer *timer = new QTimer(this);
-    connect(timer,SIGNAL(timeout()),this,SLOT(update()));
-    timer->start(100);
-
 
 
     //Mostrar Prop. de la imagen
